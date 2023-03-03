@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SERVEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f48fb1;
+      }
+
+      form {
+        max-width: 500px;
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 10px rgba(0,0,0,.3);
+      }
+
+      .btn {
+        background-color: #ff4081;
+        border: none;
+      }
+
+      .btn:hover {
+        background-color: #f50057;
+      }
+
+      .input-field input[type=text]:focus {
+        border-bottom: 2px solid #ff4081;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form class="center-align" action="/" method="post">
+        <h3 class="center-align">Ingresa el valor :</h3>
+        <div class="input-field">
+          <input type="text" name="value">
+          <label for="value">Valor</label>
+        </div>
+        <div class="center-align">
+          <button class="btn waves-effect waves-light" type="submit" name="action">Actualizar</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
+
